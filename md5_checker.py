@@ -24,7 +24,7 @@ def main():
         if os.path.isfile(file_path):
             md5_checksum = calculate_md5(file_path)
             if check_filename_contains_md5(file_name, md5_checksum):
-                print(f"{file_name} ok")
+                print(f"ok")
             else:
                 print(f"Warning: File {file_name} does NOT contain the MD5 checksum.")
 
